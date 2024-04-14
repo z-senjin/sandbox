@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Sandbox</title>
 </head>
 <body class="wrapper" id="gameWrapper">
     <canvas id="mainCanvas">Your browser doesn't support HTML5 canvas.</canvas>
-    <div id="menuWrapper">
-      <table id="elementTable">
+    <div class="rounded bg-lime-300 grid items-center justify-center" id="menuWrapper">
+      <table class="bg-lime-200 my-4 rounded" id="elementTable">
       </table>
+      <div class="grid grid-cols-2 gap-2">
       <div id="optionsCol1" class="optionsCol">
         <div id="penSizeDiv">
           <label for="pensize">Pen Size</label>
@@ -49,6 +51,7 @@
           <input id="clearButton" class="optionButton" type="button" value="Clear">
         </div>
       </div>
+    </div>
       <div id="fps-counter">
       </div>
     </div>

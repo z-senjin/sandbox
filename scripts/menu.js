@@ -98,7 +98,8 @@ function initMenu() {
       cell.appendChild(elemButton);
 
       elemButton.type = "button";
-      elemButton.className = "elementMenuButton";
+      elemButton.className =
+        "elementMenuButton bg-white rounded px-4 font-semibold";
 
       const elemType = elementMenuItems[elemIdx];
       if (!(elemType in menuNames))
